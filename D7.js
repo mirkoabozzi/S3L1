@@ -3,14 +3,14 @@
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
 
-function es1(string1, string2) {
-  let str1 = string1.substring(0, 2);
-  let str2 = string2.slice(-3);
-  let unite = str1 + str2;
-  unite.touppercase();
-  return unite;
-}
-result = es1("Mirko", "Abozzi");
+// function es1(string1, string2) {
+//   let str1 = string1.substring(0, 2);
+//   let str2 = string2.slice(-3);
+//   let unite = str1 + str2;
+//   unite.touppercase();
+//   return unite;
+// }
+// result = es1("Mirko", "Abozzi");
 
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
@@ -19,7 +19,7 @@ result = es1("Mirko", "Abozzi");
 function arrayCasualeFunction() {
   let arrayCasuale = [];
   for (let index = 0; index < 10; index++) {
-    const numeroCasuale = Math.floor(Math.random() * 100);
+    const numeroCasuale = Math.floor(Math.random() * 101);
     arrayCasuale.push(numeroCasuale);
   }
   return arrayCasuale;
